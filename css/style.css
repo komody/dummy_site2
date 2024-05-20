@@ -1,0 +1,409 @@
+@charset "UTF-8";
+body{
+  margin: 0;
+  margin-top: 70px;
+}
+
+h1{
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+ul{
+  margin: 0;
+  padding-inline-start: 0;
+}
+
+.header{
+  width: 100%;
+  position: fixed;
+  height: 70px;
+  background-color: #BEA574;
+  z-index: 10;
+  top: 0;
+}
+
+.header .header_flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.max_width{
+  max-width: 755px;
+  width: 90%;
+  margin-right: auto;
+  margin-left : auto;
+}
+
+
+.header .header_flex a{
+  width: 40%;
+  padding-bottom: 0;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header .header_flex a:hover{
+  opacity: 0.5;
+}
+
+.header .header_flex .header_list{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.hamburger-menu {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border: none;
+  background: transparent;
+  appearance: none;
+  padding: 0;
+  cursor: pointer;
+}
+.hamburger-menu__bar {
+  display: inline-block;
+  width: 44%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .5s;
+}
+.hamburger-menu__bar:first-child {
+  top: 16px;
+}
+.hamburger-menu__bar:nth-child(2) {
+  top: 24px;
+}
+.hamburger-menu__bar:last-child {
+  top: 32px;
+}
+.hamburger-menu--open .hamburger-menu__bar {
+  top: 50%;
+}
+.hamburger-menu--open .hamburger-menu__bar:first-child {
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.hamburger-menu--open .hamburger-menu__bar:last-child {
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+.hamburger-menu--open .hamburger-menu__bar:nth-child(2) {
+  display: none;
+}
+.navigation {
+  display: none;
+  background: #BEA574;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  z-index: 9999;
+}
+.navigation__list {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navigation__list-item {
+  border-bottom: solid 1px #fff;
+}
+.navigation__list-item:first-child {
+  border-top: solid 1px #fff;
+}
+.navigation__link {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+  padding: 24px 0;
+  transition: .5s;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.swiper-slide img {
+  width: 80%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.catch_copy p{
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+
+.catch_copy span{
+  font-size: 60px;
+  color: red;
+}
+
+.schedule{
+  margin: 0 auto 60px auto;
+  width: 90%;
+}
+
+.schedule h2{
+  text-align: center;
+}
+
+.schedule .schedule_flex{
+  max-width: 755px;
+  font-size: 16px;
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+}
+
+.schedule .schedule_flex .schedule_tab{
+  transition: 0.7s;
+  background-color: #D9D9D9;
+  width: 33.3%;
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: solid 2px #BEA574;
+}
+.schedule .schedule_flex .schedule_tab:hover{
+  opacity: 0.5;
+}
+
+.schedule_flex .schedule_tab.active_tab{
+  background-color: initial;
+  transition: 0.5s;
+  color: #fff;
+  background-color: #BEA574;
+}
+
+.schedule .schedule_text{
+  display: none;
+  max-width: 730px;
+  margin: 0 auto 20px auto;
+  padding: 40px 10px;
+  box-shadow: 0 0 4px gray; 
+}
+
+.schedule .active_text{
+  display: block;
+}
+
+.access{
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+.access iframe{
+  width: 90%;
+  max-width: 755px;
+}
+
+.inquiry h2{
+  text-align: center;
+}
+
+.inquiry form{
+  margin: 40px auto;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+}
+.inquiry form div{
+  text-align: left;
+}
+.inquiry form span{
+  color: red;
+  font-size: 0.5em;
+}
+
+.inquiry form span.any{
+  color: gray;
+}
+
+
+.inquiry form input{
+  width: 100%;
+  margin-bottom: 20px;
+  height: 2em;
+}
+.inquiry form .submit_ng_button{
+  display: none;
+  color: #fff;
+  height: 3em;
+  padding: 8px 0;
+  background-color: #BEA574;
+  border: #D9D9D9;
+  opacity: 0.5;
+}
+.inquiry form .submit_ng_button.active_button{
+  display: block;
+}
+
+.inquiry form .submit_ok_button{
+  display: none;
+  color: #fff;
+  height: 3em;
+  padding: 8px 0;
+  background-color: #BEA574;
+  border: #D9D9D9;
+}
+.inquiry form .submit_ok_button.active_button{
+  display: block;
+}
+
+.inquiry form select{
+  width: 100%;
+  margin-bottom: 20px;
+  height: 2em;
+}
+
+.footer{
+  width: 100%;
+  height: 70px;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  background-color: #BEA574;
+}
+
+.confirm{
+  margin-top: 60px;
+  text-align: center;
+}
+
+.confirm table{
+  margin: 20px auto;
+  text-align: left;
+  width: 90%;
+  max-width: 500px;
+}
+
+.confirm table tr{
+  display: flex;
+  margin: 48px 0;
+}
+
+.confirm table th{
+  width: 40%;
+}
+.confirm table td{
+  width: 60%;
+}
+
+.confirm form{
+  margin: 20px auto;
+  width: 90%;
+  max-width: 755px;
+}
+
+.confirm form .button_flex{
+  display: flex;
+  justify-content: space-around;
+}
+.confirm form .button_flex button{
+  color: #fff;
+  background-color: #D9D9D9;
+  padding: 0 10px;
+  border-radius: 4px;
+  border: none;
+}
+.confirm form .button_flex button:hover{
+  color: #D9D9D9;
+  background-color: #fff;
+}
+
+.confirm form .button_flex input{
+  color: #fff;
+  background-color: #BEA574;
+  padding: 0 10px;
+  border-radius: 4px;
+  border: none;
+}
+.confirm form .button_flex input:hover{
+  color: #BEA574;
+  background-color: #fff;
+}
+
+.thanks{
+  margin-top: 60px;
+  width: 90%;
+  margin-right: auto;
+  margin-left : auto;
+  font-size: 32px;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px){
+  .header .header_flex h1{
+  width: 30%;
+  }
+
+  .header .header_flex .header_list{
+  width: 70%;
+  }
+
+  .key_visual p{
+    font-size: 45px;
+  }
+
+  .thanks{
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 550px){
+  
+  .header .header_flex h1{
+    width: 50%;
+    padding-top: 10px;
+  }
+  .hamburger-menu{
+    display: inline;
+  }
+
+  .header .header_flex .header_list{
+    display: none;
+  }
+
+  .key_visual p{
+    font-size: 8vw;
+  }
+
+  .company p{
+    font-size: 1.5em;
+    margin: 0 auto 60px auto;
+    width: 90%;
+  }
+
+  .inquiry form input{
+    margin: 0 auto 20px auto;
+  }
+  .inquiry form select{
+    margin: 0 auto 20px auto;
+  }
+}
