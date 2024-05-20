@@ -272,6 +272,9 @@ ul{
   background-color: #BEA574;
   border: #D9D9D9;
 }
+.inquiry form .submit_ok_button:hover{
+  opacity: 0.5;
+}
 .inquiry form .submit_ok_button.active_button{
   display: block;
 }
@@ -289,6 +292,10 @@ ul{
   align-items: center;
   text-align: center;
   background-color: #BEA574;
+}
+
+.footer a:hover{
+  opacity: 0.5;
 }
 
 .confirm{
