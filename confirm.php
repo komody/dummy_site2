@@ -16,11 +16,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <?php include '../php/header.php';?>
+  <?php include './php/header.php';?>
 
   <section class="confirm">
     <h2>お問い合わせ内容確認</h2>
@@ -42,9 +42,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </form>
   </section>
 
-  <?php include '../php/footer.php';?>
+  <?php include './php/footer.php';?>
   
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="../js/index.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
