@@ -191,6 +191,7 @@ ul{
 
 .schedule{
   margin: 0 auto 60px auto;
+  padding-top: 70px;
   width: 90%;
 }
 
@@ -239,11 +240,16 @@ ul{
 
 .access{
   text-align: center;
+  padding-top: 70px;
   margin: 0 auto 20px auto;
 }
 .access iframe{
   width: 90%;
   max-width: 755px;
+}
+
+.inquiry{
+  padding-top: 70px;
 }
 
 .inquiry h2{

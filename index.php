@@ -8,12 +8,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
-  <?php include '../php/header.php';?>
+  <?php include './php/header.php';?>
 
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
@@ -81,7 +81,7 @@
     </form>
   </section>
 
-  <?php include '../php/footer.php';?>
+  <?php include './php/footer.php';?>
   
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -101,6 +101,6 @@
       },
     });
     </script>
-    <script src="../js/index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
