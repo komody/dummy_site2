@@ -149,10 +149,33 @@ ul{
 }
 
 .swiper-slide img {
-  width: 80%;
+  width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
+}
+
+.slide-btn-prev,.slide-btn-next{
+  font-size: 12px;
+  line-height: 40px;
+  text-align: center;
+  position: absolute;
+  top: calc(50% - 20px);
+  z-index: 10;
+  cursor: pointer;
+}
+.slide-btn-prev{
+  left: 0;
+}
+.slide-btn-next{
+  right: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 16px !important;
+  height: 16px !important;
+  margin: 0 12px !important;
+  background-color: #BEA574 !important;
 }
 
 .catch_copy p{
@@ -303,6 +326,10 @@ ul{
   text-align: center;
 }
 
+.confirm h2{
+  padding-top: 20px;
+}
+
 .confirm table{
   margin: 20px auto;
   text-align: left;
@@ -357,7 +384,7 @@ ul{
 }
 
 .thanks{
-  margin-top: 60px;
+  padding-top: 8px;
   width: 90%;
   margin-right: auto;
   margin-left : auto;

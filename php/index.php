@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -20,14 +20,12 @@
       <div class="swiper-slide"><img src="../img/slide_1.jpg" alt=""></div>
       <div class="swiper-slide"><img src="../img/slide_2.jpg" alt=""></div>
       <div class="swiper-slide"><img src="../img/slide_3.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="../img/slide_1.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="../img/slide_2.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="../img/slide_3.jpg" alt=""></div>
     </div>
-    <div class="swiper-button-next"><img src="../img/slide-btn-next.svg" alt="#"></div>
-    <div class="swiper-button-prev"></div>
+    <div class="slide-btn-next"><img src="../img/slide-btn-next.svg" alt="#"></div>
+    <div class="slide-btn-prev"><img src="../img/slide-btn-prev.svg" alt="#"></div>
     <div class="swiper-pagination"></div>
   </div>
+
   <section class="catch_copy">
     <p>今年も始まる<span>夏祭り</span></p>
   </section>
@@ -89,7 +87,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
-      // slidesPerView: 2,
       spaceBetween: 10,
       loop: true,
       centeredSlides: true,
@@ -99,8 +96,8 @@
         clickable: true,
       },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".slide-btn-next",
+        prevEl: ".slide-btn-prev",
       },
     });
     </script>
